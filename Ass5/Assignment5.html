@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIGN UP FORM</title>
+</head>
+<style>
+	body{
+			background-image: url(background.png);
+            background-repeat: no-repeat;
+			background-size: cover;
+			font-family: cursive;
+	}
+    header {
+    height: 65px;
+    width: 100%;
+    background-color:  #0B0B61;
+    color:#fff;
+    position :fixed;
+    top: 0;
+    z-index: 10;
+  }
+  .container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+  }
+
+	.wrap{
+            padding-left: 70%;
+            padding-right: 30%;
+			max-width: 380px;
+			border-radius: 20px;
+			margin:auto;
+			background:rgba(0,0,0,0.8);
+			box-sizing: border-box;
+			padding: 40px;
+			color: #fff;
+			margin-top: 100px;
+
+	}
+
+	h2{
+			text-align: center;
+	}
+
+	input[type=text],[type="tel"],[type="email"],select[id=CountryCode],select[id=country]{
+			width: 100%;
+			box-sizing: border-box;
+			padding: 12px 5px;
+			background:rgba(0,0,0,0.10);
+			outline: none;
+			border:none;
+			border-bottom: 1px dotted #fff;
+			color:#fff;
+			border-radius: 5px;
+			margin: 5px;
+			font-weight: bold;
+	}
+
+	input[type=submit]{
+			width: 100%;
+			box-sizing: border-box;
+			padding: 10px 0;
+			margin-top: 30px;
+			outline: none;
+			border:none;
+			background:#60adde;
+			opacity: 0.7;
+			border-radius: 20px;
+			font-size: 20px;
+			color: #fff;
+	}
+	input[type=submit]:hover{
+			background:#003366;
+			opacity: 0.7;
+	}
+    #img1{
+        border: #0B0B61;
+        border-width: 1in;
+        align-content: center;
+    }
+</style>
+<body>
+    <header>
+        <div class="container">
+          <div class="header-left">
+          <h1>NATIONAL WORKSHOP ON WEB TECHNOLOGY</h1>
+          </div>
+    </header>
+    <table table-border="0">
+        <tr>
+            <td width="50%" align="center">
+    <p>
+        Join us on Saturday afternoons for a very hands on, very project oriented exploration of internet technologies. Sessions run every Saturday afternoon from 3-4:30pm. 
+        You can register for individual sessions or for a discounted six-week package. 
+        Participants can start anytime they want, sessions do not have to be consecutive.</p>
+        <p>
+        New students will be introduced to the current group class project and brought up to speed at their own pace. When they are ready and interested they will have the opportunity to do an individual or partner project at the same time.
+        They will build real, interactive web pages from the ground up using current internet development techniques and interface design.</p>
+        <p>
+                    <img id="img1" src="C:\Users\Ayush\Desktop\Ass5\web1.jpg" height="250" width="400" float="left">
+        </p>
+</td>
+<td align="center">
+<div class="wrap">
+	<h2>REGISTER HERE</h2>
+	<form action="Ass5.php" method="post">
+		<input type="text" name="FirstName" placeholder="First Name" required="">
+        <input type="text" name="LastName" placeholder="Last Name" required="">
+        <input type="radio" value="Student" name="person" >Student</input>
+        <input type="radio" value="Teacher" name="person">Teacher</input>
+        <input type="radio" value="Professional" name="person">Professional</input>
+        <select id="CountryCode" name="CountryCode">
+            <option value="+91">+91</option>
+            <option value="+61">+61</option>
+            <option value="+1">+1</option>
+            <option value="+0">+0</option>
+            <option value="+45">+45</option>
+            <option value="+20">+20</option>
+            <option value="+33">+33</option>
+        </select>
+        <input type="tel" name="ContactNo" placeholder="Contact No.(***-***-****)" pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}" required="">
+        <input type="email" name="ContactNo" placeholder="e-mail (abc@email.com)" required="">
+		<input type="text" name="CompanyName" placeholder="Company Name" required=""><br>
+		<select id="country" name="CountryName" required>
+            <option value="India" selected>India</option>
+			<option value="Australia">Australia</option>
+			<option value="USA">USA</option>
+			<option value="Canada">Canada</option>
+			<option value="Denmark">Denmark</option>
+			<option value="Egypt">Egypt</option>
+			<option value="France">France</option>
+			
+		</select>
+		<input type="submit" value="submit">
+    </form>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
